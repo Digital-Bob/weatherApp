@@ -1,10 +1,40 @@
 .bg {
-  position: fixed;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
+	position: fixed;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+}
+.weather {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	h1 {
+		margin: 0 0 20px 0;
+		font-size: 80px;
+		color: $primary_header_color;
+	}
+	.weatherForm {
+		min-width: 500px;
+		width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+		.city {
+			display: block;
+			padding: 10px 20px;
+			min-width: 500px;
+			font-weight: 500;
+			outline: none;
+			text-align: center;
+			font-size: 18px;
+			border-radius: 15px;
+			border: none;
+		}
+	}
 }
